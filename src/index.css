@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Elderly-friendly: large base font, high contrast */
+@theme {
+  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  @apply min-h-screen antialiased;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* High contrast focus rings for accessibility */
+*:focus-visible {
+  @apply outline-2 outline-offset-2 outline-blue-600;
+}
